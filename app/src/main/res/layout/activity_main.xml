@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skor"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:id="@+id/text_view_score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_score_value"
+            android:layout_alignParentRight="true"
+            android:text="@string/score_value"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/pertanyaan"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/text_view_question"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_one"
+        android:textSize="18sp"
+        android:background="#0091EA"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button_choice_one"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_two"
+        android:textSize="18sp"
+        android:background="#CCC222"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button_choice_two"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_three"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button_choice_three"/>
+
+</LinearLayout>
